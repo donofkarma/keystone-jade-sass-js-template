@@ -33,4 +33,5 @@ Thumbs.db
 .bin/
 bower_components/
 node_modules/
+public/
 .env
