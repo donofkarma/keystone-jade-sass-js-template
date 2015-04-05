@@ -1,0 +1,52 @@
+include ../mixins/flash-messages
+
+doctype html
+<!--[if lte IE 9]><html lang="en-gb" class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en-gb" class="no-js"><!--<![endif]-->
+
+head
+    meta(charset="utf-8")
+
+    title= title || 'Keystone Test'
+
+    script
+        // set js enabled class - replaces 'no-js' with 'js'
+        document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1' + 'js' + '$2');
+
+    meta(name="viewport", content="initial-scale=1.0,width=device-width")
+
+    link(rel="shortcut icon", href="/assets/images/favicon.ico", type="image/x-icon")
+
+    <!-- stylesheets -->
+    <!--[if gt IE 9]><!-->
+    <link href="/assets/css/style.css" media="screen" rel="stylesheet" />
+    <!--<![endif]-->
+    <!--[if lte IE 9]>
+    <link href="/assets/css/ie.css" media="screen" rel="stylesheet" />
+
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    block css
+
+    block head
+body
+
+    #header Keystone Template
+
+    #body
+
+        block intro
+
+        +flash-messages(messages)
+
+        block content
+
+    #footer
+
+block js
+
+script(src='/assets/js/libs.js')
+script(src='/assets/js/script.js')
+
+</html>

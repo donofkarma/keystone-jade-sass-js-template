@@ -1,0 +1,18 @@
+{
+    "name": "keystone-jade-sass-js-template",
+    "description": "A template to build responsive, KeystoneJS driven websites.",
+    "version": "0.0.1",
+    "private": true,
+    "licenses": [
+        {
+            "type": "GNU General Public License v2 or later",
+            "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+        }
+    ],
+    "main": "/",
+    "dependencies": {
+        "jquery": "2.1.x"
+    },
+    "devDependencies": {
+    }
+}

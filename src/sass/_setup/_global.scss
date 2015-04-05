@@ -1,0 +1,28 @@
+/**
+* Global styles
+**/
+
+section {
+    margin-bottom: $STD_DISTANCE * 2;
+}
+h1 {
+    margin-bottom: $STD_DISTANCE;
+    font-size: 26px;
+    line-height: 1.2em;
+}
+h2 {
+    margin-bottom: $STD_DISTANCE / 2;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+h3 {
+    margin-bottom: $STD_DISTANCE;
+}
+p,
+ul {
+    margin-bottom: $STD_DISTANCE;
+    list-style: disc;
+}
+li {
+    margin: 0 0 5px 40px;
+}

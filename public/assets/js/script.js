@@ -1,0 +1,1 @@
+var Template=Template||{};Template=function(){return{init:function(){},pageInit:function(){}}}(),$(function(){Template.init()}),$(window).load(function(){Template.pageInit()});
