@@ -17,6 +17,20 @@ Once these have been set up, you need to install the additional bower and grunt.
 bower install && npm install
 ```
 
+#### Setting up the environment
+
+Create a `.env` file in root of the project and fill in the following values:
+
+```
+NODE_ENV=development
+COOKIE_SECRET={a random string to encrypt cookies}
+MONGO_URI={your mongo connection uri} // can also be MONGOLAB_URI
+PORT={the port to listen on} // defaults to 3000, automatically set by paas (e.g. heroku)
+```
+
+**This file is ignored by the default .gitignore settings. When you put your project into production, replicate the env variables above and set to the appropriate values.**
+
+
 ### Usage
 
 1) Run the grunt deploy task to compile the included .scss and .js files and copy the image assets to the `public/` directory. This way you won't get 404 errors when loading the project for the first time:
